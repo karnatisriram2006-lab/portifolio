@@ -1320,15 +1320,15 @@ a:hover .arrow {
   gap: 14px;
 }
 .qr-card {
-  width: 106px;
+  width: 116px;
   background: #121212;
   border: 1px solid #222222;
   border-radius: 6px;
-  padding: 10px;
+  padding: 12px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
   transition: transform 0.25s var(--curve), border-color 0.25s var(--curve), box-shadow 0.25s var(--curve);
 }
@@ -1338,14 +1338,15 @@ a:hover .arrow {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 .qr-image-wrap {
-  width: 82px;
-  height: 82px;
-  background: #0d0d0d;
-  border-radius: 4px;
-  padding: 3px;
+  width: 94px;
+  height: 94px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 .qr-image-wrap img {
   width: 100%;
@@ -1684,9 +1685,9 @@ a:hover .arrow {
   .contact-content h2 { font-size: clamp(38px, 11vw, 56px); }
   .contact-lead { font-size: 12.5px; }
   .contact-actions { gap: 10px; }
-  .contact-qr-grid { gap: 12px; }
-  .qr-card { width: 96px; padding: 8px; }
-  .qr-image-wrap { width: 74px; height: 74px; }
+  .contact-qr-grid { gap: 14px; }
+  .qr-card { width: 104px; padding: 10px 8px; }
+  .qr-image-wrap { width: 84px; height: 84px; }
   .contact-motto { font-size: 13px; }
 
   /* Footer Mobile */
