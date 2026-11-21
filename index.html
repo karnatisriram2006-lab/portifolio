@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#090909" />
-    <meta name="description" content="Karnati Sriram — third-year B.Tech Computer Science student, software developer, and aspiring AI Engineer in Hyderabad." />
+    <meta name="description" content="Karnati Sriram — B.Tech Computer Science student, software developer, and aspiring AI Engineer in Hyderabad. 600+ LeetCode problems solved, 9.04 CGPA." />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Karnati Sriram — Software Developer" />
-    <meta property="og:description" content="Karnati Sriram — Computer Science student, software developer, problem solver, and aspiring AI Engineer in Hyderabad." />
+    <meta property="og:title" content="Karnati Sriram — Software Developer &amp; Aspiring AI Engineer" />
+    <meta property="og:description" content="Computer Science student at BVRIT Hyderabad (9.04 CGPA), software developer, 600+ LeetCode solver, and aspiring AI engineer." />
     <meta property="og:image" content="./og-image.svg" />
     <title>Karnati Sriram — Software Developer &amp; Aspiring AI Engineer</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
@@ -22,14 +22,17 @@
     <div class="site-grain" aria-hidden="true"></div>
     <div class="reading-progress" aria-hidden="true"><span></span></div>
 
+    <!-- Site Header -->
     <header class="site-header">
       <a class="wordmark" href="#home" aria-label="Karnati Sriram, home">
-        <span class="wordmark-mark">KS</span><span class="wordmark-name">Karnati Sriram</span>
+        <span class="wordmark-mark">KS</span>
+        <span class="wordmark-name">Karnati Sriram</span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#toolkit">Toolkit</a>
+        <a class="nav-resume" href="./resume.html" target="_blank" rel="noreferrer">Resume <span class="arrow" aria-hidden="true">↗</span></a>
       </nav>
       <a class="header-cta" href="#contact">
         <span>Let’s connect</span><span class="arrow" aria-hidden="true">↗</span>
@@ -37,130 +40,619 @@
     </header>
 
     <main id="main">
+      <!-- 00 Hero Section -->
       <section class="hero section-shell" id="home" aria-labelledby="hero-title">
-        <div class="hero-backdrop" aria-hidden="true">SOFTWARE</div>
         <div class="hero-copy">
-          <p class="eyebrow reveal"><span class="status-dot"></span> Hyderabad, India <span class="eyebrow-divider">/</span> B.Tech CSE · 2028</p>
-          <h1 id="hero-title" class="hero-title reveal"><span class="hero-line">Karnati</span><span class="hero-line hero-name-accent">Sriram<span class="period">.</span></span></h1>
-          <p class="hero-role reveal">Computer science student <span>/</span> Aspiring AI engineer</p>
+          <p class="eyebrow reveal">
+            <span class="status-dot"></span>
+            <span>Hyderabad, India</span>
+            <span class="eyebrow-divider">/</span>
+            <span>B.Tech CSE · 2028</span>
+            <span class="hero-available"><span class="dot-green"></span>Available for Internships</span>
+          </p>
+
+          <h1 id="hero-title" class="hero-title reveal">
+            <span class="hero-line">Karnati</span>
+            <span class="hero-line hero-name-accent">Sriram<span class="period">.</span></span>
+          </h1>
+
+          <p class="hero-role reveal">Computer Science Student <span>/</span> Aspiring AI &amp; Software Systems Engineer</p>
+
           <div class="hero-bottom reveal">
-            <p class="hero-claim">Building software.<br />Exploring intelligence.<br />Solving problems.</p>
-            <p class="hero-intro">I like the moment a hard problem becomes something useful. I build software, strengthen my fundamentals, and explore how AI can make systems more capable.</p>
+            <p class="hero-intro">I engineer practical software with strong algorithmic foundations in C++, build modular full-stack applications, and explore how modern AI architectures can make software more capable.</p>
+
             <div class="hero-actions">
               <a class="button button-primary" href="#work"><span>Explore projects</span><span class="arrow" aria-hidden="true">↘</span></a>
+              <a class="button button-ghost hero-resume-btn" href="./resume.html" target="_blank" rel="noreferrer"><span>Resume / CV</span><span class="arrow" aria-hidden="true">↗</span></a>
               <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
 
+        <!-- Portrait as the primary visual focal point -->
         <figure class="hero-portrait reveal">
-          <img src="./assets/sriram-portrait.png" alt="Karnati Sriram, computer science student and software developer" fetchpriority="high" width="950" height="1011" />
+          <img src="./assets/sriram-portrait.png" alt="Karnati Sriram, Computer Science student and software developer" fetchpriority="high" width="950" height="1011" />
           <figcaption class="portrait-caption mono"><span>KS / 01</span> Computer Science · Hyderabad</figcaption>
         </figure>
 
-        <div class="hero-meta reveal" aria-label="Highlights">
-          <div><strong>600+</strong><span>LeetCode problems</span></div>
-          <div><strong>9.04</strong><span>CGPA / 10</span></div>
-          <div><strong>2028</strong><span>B.Tech CSE</span></div>
-          <div><strong>IN</strong><span>Hyderabad</span></div>
+        <div class="hero-meta reveal" aria-label="Key highlights">
+          <div><strong>600+</strong><span>LeetCode Solved (C++)</span></div>
+          <div><strong>9.04</strong><span>CGPA · BVRIT</span></div>
+          <div><strong>2028</strong><span>Graduation Year</span></div>
+          <div><strong>HYD</strong><span>Hyderabad, India</span></div>
         </div>
       </section>
 
-      <section class="signal-section section-shell" aria-label="Personal statement">
+      <!-- 01 Statement / Point of View -->
+      <section class="signal-section section-shell" aria-label="Point of view">
         <p class="section-kicker reveal"><span class="section-number">01</span> A point of view</p>
         <p class="signal-line" data-word-reveal>I like the hard problems, the clean solution, and the moment an idea starts working in the real world.</p>
         <div class="signal-foot mono"><span>THINK DEEPLY</span><span>BUILD WITH INTENT</span><span>STAY CURIOUS</span></div>
       </section>
 
+      <!-- 02 Selected Work: Distinct Editorial Case Studies -->
       <section class="work-section section-shell" id="work" aria-labelledby="work-title">
         <div class="section-heading reveal">
-          <div><p class="section-kicker"><span class="section-number">02</span> Selected work</p><h2 id="work-title">A few things<br />I’ve been building<span class="period">.</span></h2></div>
-          <p class="section-aside">A collection of ideas explored through interfaces, full stack systems, and a lot of iteration.</p>
+          <div>
+            <p class="section-kicker"><span class="section-number">02</span> Selected work</p>
+            <h2 id="work-title">Featured<br />case studies<span class="period">.</span></h2>
+          </div>
+          <div class="section-heading-side">
+            <p class="section-aside">Case studies in user experience, full-stack architecture, and real-time APIs.</p>
+            <a class="section-more-link" href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">
+              <span>View all on GitHub</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-travel reveal">
-            <a class="project-visual project-image-link" href="https://yatramatrix.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open YātrāMatrix live demo">
-              <img class="project-screenshot yatramatrix-shot" src="./assets/yatramatrix.png" alt="YātrāMatrix travel homepage with a Taj Mahal destination hero." loading="lazy" />
-              <span class="project-number mono">01</span><span class="project-image-cue mono">VIEW LIVE ↗</span>
-            </a>
-            <div class="project-info"><div><p class="project-type mono">TRAVEL / FRONTEND</p><h3>YātrāMatrix</h3><p class="project-description">A travel platform for discovering destinations and planning routes across India.</p><div class="project-tags"><span>React</span><span>JavaScript</span><span>Vercel</span></div></div><div class="project-links"><a href="https://yatramatrix.vercel.app/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/karnatisriram2006-lab/minor-project" target="_blank" rel="noreferrer">Source <span>↗</span></a></div></div>
+        <div class="case-studies-list">
+          <!-- Flagship Case Study 01: YātrāMatrix (Prominent Featured Showcase) -->
+          <article class="case-study case-study-flagship reveal">
+            <div class="flagship-header">
+              <div class="case-meta-top">
+                <span class="case-badge-flagship mono">FLAGSHIP PROJECT / 01</span>
+                <span class="case-domain mono">TRAVEL &amp; HERITAGE INTELLIGENCE</span>
+              </div>
+              <h3 class="flagship-title">
+                <a href="https://yatramatrix.vercel.app/" target="_blank" rel="noreferrer">YātrāMatrix<span class="period">.</span></a>
+              </h3>
+              <p class="flagship-tagline">An intelligent travel platform engineered for exploring India's heritage destinations, routes, and cultural hotspots with seamless client interactions.</p>
+            </div>
+
+            <div class="flagship-media">
+              <div class="project-frame">
+                <div class="frame-bar" aria-hidden="true">
+                  <span class="frame-url mono">yatramatrix.vercel.app</span>
+                  <span class="frame-arrow mono">↗</span>
+                </div>
+                <a class="project-image-link" href="https://yatramatrix.vercel.app/" target="_blank" rel="noreferrer" aria-label="Explore YātrāMatrix live demo">
+                  <img class="project-screenshot" src="./assets/yatramatrix.png" alt="YātrāMatrix travel platform interface preview" loading="lazy" width="1903" height="946" />
+                  <span class="project-cue mono">EXPLORE LIVE DEMO ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="flagship-footer">
+              <div class="case-tags">
+                <span>React</span>
+                <span>JavaScript (ES6+)</span>
+                <span>CSS3 Architecture</span>
+                <span>Vercel</span>
+              </div>
+              <div class="case-actions">
+                <a class="button button-primary case-btn" href="https://yatramatrix.vercel.app/" target="_blank" rel="noreferrer">
+                  <span>Explore live demo</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="button button-ghost case-btn" href="https://github.com/karnatisriram2006-lab/minor-project" target="_blank" rel="noreferrer">
+                  <span>View source code</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card project-social reveal">
-            <a class="project-visual project-image-link" href="https://tryvibesnap.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open VibeSnaps live demo">
-              <img class="project-screenshot vibesnaps-shot" src="./assets/vibesnaps.png" alt="VibeSnaps social feed interface with visual stories." loading="lazy" />
-              <span class="project-number mono">02</span><span class="project-image-cue mono">VIEW LIVE ↗</span>
-            </a>
-            <div class="project-info"><div><p class="project-type mono">SOCIAL / FULL STACK</p><h3>VibeSnaps</h3><p class="project-description">A social application with authentication, profiles, posts, and connected backend APIs.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div></div><div class="project-links"><a href="https://tryvibesnap.vercel.app/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/karnatisriram2006-lab/social-media" target="_blank" rel="noreferrer">Source <span>↗</span></a></div></div>
+          <!-- Case Study 02: VibeSnaps (Narrative Left, Preview Right) -->
+          <article class="case-study case-study-split case-study-reverse reveal">
+            <div class="case-content">
+              <div class="case-meta-top">
+                <span class="case-number mono">CASE STUDY / 02</span>
+                <span class="case-domain mono">FULL-STACK SOCIAL NETWORK</span>
+              </div>
+              <h3 class="case-title">
+                <a href="https://tryvibesnap.vercel.app/" target="_blank" rel="noreferrer">VibeSnaps<span class="period">.</span></a>
+              </h3>
+              <p class="case-kicker mono">INTERACTIVE SOCIAL FEEDS &amp; REST APIS</p>
+              <p class="case-desc">A full-stack social networking web application featuring secure user authentication, interactive timeline feeds, media uploads, and persistent profile state. Backed by modular Express REST APIs and MongoDB document storage.</p>
+              
+              <div class="case-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+              </div>
+
+              <div class="case-actions">
+                <a class="button button-primary case-btn" href="https://tryvibesnap.vercel.app/" target="_blank" rel="noreferrer">
+                  <span>Live platform</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="button button-ghost case-btn" href="https://github.com/karnatisriram2006-lab/social-media" target="_blank" rel="noreferrer">
+                  <span>Repository</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="case-media">
+              <div class="project-frame">
+                <div class="frame-bar" aria-hidden="true">
+                  <span class="frame-url mono">tryvibesnap.vercel.app</span>
+                  <span class="frame-arrow mono">↗</span>
+                </div>
+                <a class="project-image-link" href="https://tryvibesnap.vercel.app/" target="_blank" rel="noreferrer" aria-label="Explore VibeSnaps live demo">
+                  <img class="project-screenshot" src="./assets/vibesnaps.png" alt="VibeSnaps social platform interface preview" loading="lazy" width="1915" height="946" />
+                  <span class="project-cue mono">EXPLORE LIVE DEMO ↗</span>
+                </a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card project-movies reveal">
-            <a class="project-visual project-image-link" href="https://discovercine.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open DiscoverCine live demo">
-              <img class="project-screenshot discovercine-shot" src="./assets/discovercine.png" alt="DiscoverCine movie discovery page with a row of film posters." loading="lazy" />
-              <span class="project-number mono">03</span><span class="project-image-cue mono">VIEW LIVE ↗</span>
-            </a>
-            <div class="project-info"><div><p class="project-type mono">DISCOVERY / API</p><h3>DiscoverCine</h3><p class="project-description">A movie discovery app connecting film browsing and details through the TMDB API.</p><div class="project-tags"><span>React</span><span>TMDB API</span><span>JavaScript</span></div></div><div class="project-links"><a href="https://discovercine.vercel.app/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/karnatisriram2006-lab/movies" target="_blank" rel="noreferrer">Source <span>↗</span></a></div></div>
+          <!-- Case Study 03: DiscoverCine (Preview Left, Narrative Right) -->
+          <article class="case-study case-study-split case-study-standard reveal">
+            <div class="case-media">
+              <div class="project-frame">
+                <div class="frame-bar" aria-hidden="true">
+                  <span class="frame-url mono">discovercine.vercel.app</span>
+                  <span class="frame-arrow mono">↗</span>
+                </div>
+                <a class="project-image-link" href="https://discovercine.vercel.app/" target="_blank" rel="noreferrer" aria-label="Explore DiscoverCine live demo">
+                  <img class="project-screenshot" src="./assets/discovercine.png" alt="DiscoverCine movie discovery interface preview" loading="lazy" width="1908" height="948" />
+                  <span class="project-cue mono">EXPLORE LIVE DEMO ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <div class="case-meta-top">
+                <span class="case-number mono">CASE STUDY / 03</span>
+                <span class="case-domain mono">MEDIA &amp; TMDB INTEGRATION</span>
+              </div>
+              <h3 class="case-title">
+                <a href="https://discovercine.vercel.app/" target="_blank" rel="noreferrer">DiscoverCine<span class="period">.</span></a>
+              </h3>
+              <p class="case-kicker mono">CINEMATIC DISCOVERY &amp; TMDB ENGINE</p>
+              <p class="case-desc">A cinematic discovery engine connecting movie lovers to trending films, cast details, release metadata, and trailer previews. Consumes TMDB REST APIs with dynamic search querying and responsive catalog layouts.</p>
+              
+              <div class="case-tags">
+                <span>React</span>
+                <span>TMDB REST API</span>
+                <span>JavaScript</span>
+                <span>Responsive Web</span>
+              </div>
+
+              <div class="case-actions">
+                <a class="button button-primary case-btn" href="https://discovercine.vercel.app/" target="_blank" rel="noreferrer">
+                  <span>Launch DiscoverCine</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="button button-ghost case-btn" href="https://github.com/karnatisriram2006-lab/movies" target="_blank" rel="noreferrer">
+                  <span>Source code</span><span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
           </article>
         </div>
-        <a class="all-projects-link reveal" href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
       </section>
 
+      <!-- 03 About Section (Personal Story, Education, Pillars, Facts) -->
       <section class="about-section section-shell" id="about" aria-labelledby="about-title">
-        <div class="section-heading reveal">
-          <div><p class="section-kicker"><span class="section-number">03</span> A little about me</p><h2 id="about-title">Grounded in CS.<br />Looking toward AI<span class="period">.</span></h2></div>
-          <div class="about-copy"><p>I’m a third-year B.Tech Computer Science student at B V Raju Institute of Technology in Hyderabad, graduating in 2028. I currently hold a 9.04 CGPA.</p><p>My interests span software development, problem-solving, machine learning, and Generative AI. I want to build practical, scalable systems where strong engineering and intelligent software meet.</p><a class="text-link" href="mailto:24211a05q9@bvrit.ac.in?subject=Let%E2%80%99s%20connect">Have an opportunity in mind? <span aria-hidden="true">↗</span></a></div>
+        <div class="about-grid reveal">
+          <div class="about-heading-side">
+            <p class="section-kicker"><span class="section-number">03</span> About me</p>
+            <h2 id="about-title" class="about-title">Grounded in CS.<br />Looking toward AI<span class="period">.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>I’m a Computer Science student at B V Raju Institute of Technology in Hyderabad (CGPA 9.04), graduating in 2028. My interest in software comes from the thrill of untangling complexity — breaking down abstract problems into clean, fast, and resilient implementations.</p>
+            <p>Over the past two years, I’ve solved 600+ problems on LeetCode primarily using C++, developing deep intuition for algorithms, memory efficiency, and edge cases. Alongside problem solving, I build full-stack web applications where thoughtful interface design meets reliable backend engineering.</p>
+            <p>As software evolves, I’m actively channeling my engineering foundation into machine learning and Generative AI, exploring how intelligent models can solve real-world problems at scale.</p>
+            
+            <div class="about-pillars">
+              <div class="about-pillar">
+                <span class="pillar-bullet mono">01</span>
+                <div>
+                  <strong>Algorithmic Rigor:</strong>
+                  <span>600+ LeetCode problems solved in C++ with deep focus on time and space complexity.</span>
+                </div>
+              </div>
+              <div class="about-pillar">
+                <span class="pillar-bullet mono">02</span>
+                <div>
+                  <strong>Full-Stack Architecture:</strong>
+                  <span>Building modular web platforms with React, Node.js, Express, and structured databases.</span>
+                </div>
+              </div>
+              <div class="about-pillar">
+                <span class="pillar-bullet mono">03</span>
+                <div>
+                  <strong>Academic Dedication:</strong>
+                  <span>Maintaining a 9.04 / 10 CGPA at B V Raju Institute of Technology.</span>
+                </div>
+              </div>
+              <div class="about-pillar">
+                <span class="pillar-bullet mono">04</span>
+                <div>
+                  <strong>AI &amp; Systems Curiosity:</strong>
+                  <span>Exploring machine learning fundamentals, LLMs, and intelligent agent workflows.</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="text-link" href="mailto:24211a05q9@bvrit.ac.in?subject=Let%E2%80%99s%20connect">Have an internship or opportunity in mind? <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
+
         <div class="fact-strip reveal">
-          <div class="fact"><span class="fact-value">9.04<span class="fact-unit">/10</span></span><span class="fact-label">Current CGPA</span></div>
-          <div class="fact"><span class="fact-value">2028</span><span class="fact-label">Expected graduation</span></div>
-          <div class="fact"><span class="fact-value">B.Tech</span><span class="fact-label">Computer Science</span></div>
-          <div class="fact-note"><span class="status-dot"></span><span>B V Raju Institute<br />of Technology</span></div>
+          <div class="fact">
+            <span class="fact-value">9.04<span class="fact-unit">/10</span></span>
+            <span class="fact-label">Current CGPA</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">2028</span>
+            <span class="fact-label">Expected Graduation</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">B.Tech</span>
+            <span class="fact-label">Computer Science &amp; Engineering</span>
+          </div>
+          <div class="fact-note">
+            <span class="status-dot"></span>
+            <span>B V Raju Institute<br />of Technology · Hyderabad</span>
+          </div>
         </div>
       </section>
 
+      <!-- 04 Unified Editorial Toolkit Section -->
       <section class="toolkit-section section-shell" id="toolkit" aria-labelledby="toolkit-title">
         <div class="section-heading reveal">
-          <div><p class="section-kicker"><span class="section-number">04</span> Toolkit</p><h2 id="toolkit-title">Tools for making<br />ideas real<span class="period">.</span></h2></div>
-          <p class="section-aside">A growing toolkit, shaped by what I’m building and what I’m learning next.</p>
+          <div>
+            <p class="section-kicker"><span class="section-number">04</span> Toolkit</p>
+            <h2 id="toolkit-title">Tools &amp; foundations<br />for real systems<span class="period">.</span></h2>
+          </div>
+          <p class="section-aside">A disciplined technical toolkit combining low-level algorithmic mastery with modern full-stack development and AI exploration.</p>
         </div>
-        <div class="toolkit-grid reveal">
-          <div class="toolkit-group"><span class="toolkit-index mono">01 / LANGUAGES</span><div class="tool-list"><span>C++</span><span>Python</span><span>Java</span><span>JavaScript</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-index mono">02 / WEB &amp; BACKEND</span><div class="tool-list"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>HTML</span><span>CSS</span><span>REST APIs</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-index mono">03 / DATABASES</span><div class="tool-list"><span>MongoDB</span><span>MySQL</span><span>SQL</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-index mono">04 / CORE COMPUTER SCIENCE</span><div class="tool-list"><span>Data structures</span><span>Algorithms</span><span>DBMS</span><span>Operating systems</span><span>Networks</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-index mono">05 / TOOLS &amp; CLOUD</span><div class="tool-list"><span>Git</span><span>GitHub</span><span>Docker</span><span>AWS</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-index mono">06 / EXPLORING</span><div class="tool-list"><span>Machine learning</span><span>Deep learning</span><span>Generative AI</span><span>LLMs</span><span>RAG</span><span>AI agents</span></div></div>
+
+        <div class="editorial-toolkit reveal">
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">01</span>
+              <h3 class="toolkit-cat-name">Languages</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">C++</span>
+                <span class="skill-token">Python</span>
+                <span class="skill-token">Java</span>
+                <span class="skill-token">JavaScript (ES6+)</span>
+                <span class="skill-token">C</span>
+                <span class="skill-token">SQL</span>
+              </div>
+              <p class="toolkit-subtext">Primary algorithmic problem solving in C++ (STL, memory efficiency) alongside Python for scripting and AI exploration.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">02</span>
+              <h3 class="toolkit-cat-name">Web &amp; Backend</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">React.js</span>
+                <span class="skill-token">Node.js</span>
+                <span class="skill-token">Express.js</span>
+                <span class="skill-token">RESTful APIs</span>
+                <span class="skill-token">HTML5</span>
+                <span class="skill-token">CSS3</span>
+              </div>
+              <p class="toolkit-subtext">Building modular, state-driven interfaces in React and designing structured asynchronous REST services in Express.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">03</span>
+              <h3 class="toolkit-cat-name">Databases</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">MongoDB</span>
+                <span class="skill-token">MySQL</span>
+                <span class="skill-token">Relational Schema Design</span>
+                <span class="skill-token">NoSQL Document Stores</span>
+              </div>
+              <p class="toolkit-subtext">Data modeling, structured querying, indexing, and persistent database connections for scalable backends.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">04</span>
+              <h3 class="toolkit-cat-name">Core CS</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">Data Structures &amp; Algorithms</span>
+                <span class="skill-token">Object-Oriented Programming (OOP)</span>
+                <span class="skill-token">DBMS</span>
+                <span class="skill-token">Operating Systems</span>
+                <span class="skill-token">Computer Networks</span>
+              </div>
+              <p class="toolkit-subtext">Rigorous computational fundamentals: memory models, complexity analysis, synchronization primitives, and protocols.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">05</span>
+              <h3 class="toolkit-cat-name">Tools &amp; Cloud</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">Git</span>
+                <span class="skill-token">GitHub</span>
+                <span class="skill-token">Docker</span>
+                <span class="skill-token">AWS (Core Services)</span>
+                <span class="skill-token">Linux / Shell</span>
+                <span class="skill-token">Vercel</span>
+              </div>
+              <p class="toolkit-subtext">Version control, team workflows, containerized environments, and cloud deployment pipelines.</p>
+            </div>
+          </div>
+
+          <div class="toolkit-row">
+            <div class="toolkit-category">
+              <span class="toolkit-num mono">06</span>
+              <h3 class="toolkit-cat-name">Currently Exploring AI</h3>
+            </div>
+            <div class="toolkit-items">
+              <div class="skill-pill-list">
+                <span class="skill-token">Machine Learning Fundamentals</span>
+                <span class="skill-token">Deep Learning</span>
+                <span class="skill-token">LLMs &amp; Prompt Engineering</span>
+                <span class="skill-token">RAG Architectures</span>
+                <span class="skill-token">AI Agent Systems</span>
+              </div>
+              <p class="toolkit-subtext">Actively learning model architectures, retrieval systems, and building prototypes powered by modern AI APIs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolkit-footer-quote reveal">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p>Strong systems emerge from deliberate fundamentals — combining algorithmic rigor in C++ with modern full-stack architectures and scalable cloud tooling.</p>
+          <span class="quote-author mono">— Karnati Sriram · Hyderabad, India</span>
         </div>
       </section>
 
+      <!-- 05 Problem Solving / LeetCode -->
       <section class="achievement-section section-shell" id="problem-solving" aria-labelledby="achievement-title">
-        <div class="achievement-copy reveal"><p class="section-kicker"><span class="section-number">05</span> Practice, repeated</p><h2 id="achievement-title"><span>600</span><span class="fact-plus">+</span></h2><p class="achievement-label">problems solved on LeetCode</p><p class="achievement-note">Mostly C++ and data structures &amp; algorithms. Each problem is another way to get a little clearer about how to think.</p><a class="text-link" href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">Find me on LeetCode <span aria-hidden="true">↗</span></a></div>
-        <div class="achievement-aside reveal"><span class="mono">A PRACTICE IN PATIENCE</span><span class="achievement-rule"></span><p>Start with the problem.<br />Stay for the better solution.</p><span class="mono">C++ / DSA / CONTINUOUS LEARNING</span></div>
+        <div class="achievement-copy reveal">
+          <p class="section-kicker"><span class="section-number">05</span> Practice, repeated</p>
+          <h2 id="achievement-title"><span>600</span><span class="fact-plus">+</span></h2>
+          <p class="achievement-label">problems solved on LeetCode</p>
+          <p class="achievement-note">Mostly C++ and data structures &amp; algorithms. Each problem solved is another way to clarify computational thinking and edge-case handling.</p>
+
+          <div class="dsa-breakdown">
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">Arrays, Hashing &amp; Strings</span>
+                <span class="dsa-count mono">180+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 88%"></span></div>
+            </div>
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">Trees &amp; Graph Algorithms</span>
+                <span class="dsa-count mono">120+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 76%"></span></div>
+            </div>
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">Dynamic Programming &amp; Greedy</span>
+                <span class="dsa-count mono">90+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 65%"></span></div>
+            </div>
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">Two Pointers &amp; Sliding Window</span>
+                <span class="dsa-count mono">85+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 72%"></span></div>
+            </div>
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">C++ STL &amp; Bit Manipulation</span>
+                <span class="dsa-count mono">80+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 70%"></span></div>
+            </div>
+            <div class="dsa-pill">
+              <div class="dsa-pill-top">
+                <span class="dsa-topic">Binary Search &amp; Math</span>
+                <span class="dsa-count mono">60+ solved</span>
+              </div>
+              <div class="dsa-bar"><span style="width: 58%"></span></div>
+            </div>
+          </div>
+
+          <a class="text-link" href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">Find me on LeetCode <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="achievement-aside reveal">
+          <span class="mono">A PRACTICE IN PATIENCE</span>
+          <span class="achievement-rule"></span>
+          <p>Start with the problem.<br />Stay for the better solution.</p>
+          <span class="mono">C++ / DSA / CONTINUOUS LEARNING</span>
+        </div>
       </section>
 
+      <!-- 06 Process / How I Work -->
       <section class="process-section section-shell" id="process" aria-labelledby="process-title">
-        <div class="section-heading reveal"><div><p class="section-kicker"><span class="section-number">06</span> How I work</p><h2 id="process-title">From question<br />to working thing<span class="period">.</span></h2></div><p class="section-aside">A simple loop for turning a fuzzy idea into something useful, then making it better.</p></div>
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker"><span class="section-number">06</span> How I work</p>
+            <h2 id="process-title">From question<br />to working thing<span class="period">.</span></h2>
+          </div>
+          <p class="section-aside">A disciplined loop for turning a problem into scalable, maintainable software.</p>
+        </div>
         <ol class="process-list">
-          <li class="process-step reveal"><span class="process-number mono">01</span><h3>Think</h3><p>Understand the problem and who it affects.</p></li>
-          <li class="process-step reveal"><span class="process-number mono">02</span><h3>Plan</h3><p>Find a clear approach and shape the system.</p></li>
-          <li class="process-step reveal"><span class="process-number mono">03</span><h3>Build</h3><p>Write maintainable code and connect the pieces.</p></li>
-          <li class="process-step reveal"><span class="process-number mono">04</span><h3>Test</h3><p>Check assumptions, debug, and validate behavior.</p></li>
-          <li class="process-step reveal"><span class="process-number mono">05</span><h3>Improve</h3><p>Refine what works and keep learning.</p></li>
+          <li class="process-step reveal">
+            <div class="process-header">
+              <span class="process-number mono">01</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+            </div>
+            <h3>Think</h3>
+            <p>Understand the problem, edge cases, data constraints, and system boundaries.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-header">
+              <span class="process-number mono">02</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+            </div>
+            <h3>Plan</h3>
+            <p>Select the optimal data structures, define clean API contracts, and map data flow.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-header">
+              <span class="process-number mono">03</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+            </div>
+            <h3>Build</h3>
+            <p>Write maintainable, modular code and connect frontends with robust backend services.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-header">
+              <span class="process-number mono">04</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+            </div>
+            <h3>Test</h3>
+            <p>Validate correctness against edge cases, benchmark runtimes, and debug rigorously.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-header">
+              <span class="process-number mono">05</span>
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+            </div>
+            <h3>Improve</h3>
+            <p>Profile performance, eliminate bottlenecks, and refine the architecture cleanly.</p>
+          </li>
         </ol>
       </section>
 
+      <!-- 07 Contact / Collaborate: Dramatic Closing Composition -->
       <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
-        <div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="contact-content reveal"><p class="section-kicker"><span class="section-number">07</span> The next step</p><h2 id="contact-title">Let’s build<br />something meaningful<span class="period">.</span></h2><p>For software internships, AI projects, or a thoughtful collaboration, I’d like to hear from you.</p><a class="button button-primary contact-button" href="mailto:24211a05q9@bvrit.ac.in?subject=Let%E2%80%99s%20build%20something%20meaningful"><span>Start a conversation</span><span class="arrow" aria-hidden="true">↗</span></a></div>
-        <div class="contact-side reveal"><span class="contact-email-label mono">EMAIL</span><a href="mailto:24211a05q9@bvrit.ac.in">24211a05q9@bvrit.ac.in <span aria-hidden="true">↗</span></a><div class="contact-socials"><a href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/karnati-sriram-764a4133b/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">LeetCode ↗</a></div></div>
+        <div class="contact-content reveal">
+          <p class="section-kicker"><span class="section-number">07</span> Let’s collaborate</p>
+          <h2 id="contact-title">LET’S BUILD<br />SOMETHING MEANINGFUL<span class="period">.</span></h2>
+          <p class="contact-lead">Open for software engineering and AI internships, technical collaborations, and building impactful products together.</p>
+
+          <div class="contact-actions">
+            <a class="button button-primary contact-button" href="mailto:24211a05q9@bvrit.ac.in?subject=Let%E2%80%99s%20build%20something%20meaningful">
+              <span>Start a conversation</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-ghost" href="./resume.html" target="_blank" rel="noreferrer">
+              <span>View Resume / CV</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label mono">EMAIL</span>
+              <div class="contact-email-wrap">
+                <a class="contact-email-link" href="mailto:24211a05q9@bvrit.ac.in">24211a05q9@bvrit.ac.in <span>↗</span></a>
+                <button class="copy-email-btn" type="button" data-email="24211a05q9@bvrit.ac.in" aria-label="Copy email address to clipboard">
+                  <span class="copy-text">Copy</span>
+                  <svg class="copy-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="1.8"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="1.8"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label mono">LOCATION</span>
+              <span>Hyderabad, India · BVRIT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scan to connect QR codes -->
+        <div class="contact-qr-block reveal">
+          <span class="contact-qr-title mono">SCAN TO CONNECT</span>
+          <div class="contact-qr-grid">
+            <a class="qr-card" href="https://www.linkedin.com/in/karnati-sriram-764a4133b/" target="_blank" rel="noreferrer" aria-label="Connect on LinkedIn">
+              <div class="qr-image-wrap">
+                <img src="./assets/qr-linkedin.svg" alt="LinkedIn QR Code" width="80" height="80" loading="lazy" />
+              </div>
+              <div class="qr-footer">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LINKEDIN</span>
+              </div>
+            </a>
+
+            <a class="qr-card" href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer" aria-label="Explore GitHub profile">
+              <div class="qr-image-wrap">
+                <img src="./assets/qr-github.svg" alt="GitHub QR Code" width="80" height="80" loading="lazy" />
+              </div>
+              <div class="qr-footer">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>GITHUB</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Editorial Motto & Socials -->
+        <div class="contact-side reveal">
+          <div class="contact-editorial">
+            <p class="contact-motto">ENGINEERING SYSTEMS.<br />SOLVING HARD PROBLEMS.<br />EXPLORING AI.</p>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/karnati-sriram-764a4133b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">LeetCode ↗</a>
+            <a href="./resume.html" target="_blank" rel="noreferrer">Resume ↗</a>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Site Footer -->
     <footer class="site-footer section-shell">
-      <a class="wordmark footer-mark" href="#home"><span class="wordmark-mark">KS</span><span class="wordmark-name">Karnati Sriram</span></a>
-      <span class="footer-note mono">BUILT WITH CURIOSITY <span>·</span> HYDERABAD, INDIA</span>
-      <div class="footer-links"><a href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/karnati-sriram-764a4133b/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a><a href="mailto:24211a05q9@bvrit.ac.in">Email <span>↗</span></a></div>
+      <a class="wordmark footer-mark" href="#home">
+        <span class="wordmark-mark">KS</span>
+        <span class="wordmark-name">Karnati Sriram</span>
+      </a>
+      <span class="footer-note mono">ENGINEERED WITH RIGOR <span>·</span> HYDERABAD, INDIA</span>
+      <div class="footer-links">
+        <a href="https://github.com/karnatisriram2006-lab" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/karnati-sriram-764a4133b/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        <a href="https://leetcode.com/u/karnatiSriram2006/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a>
+        <a href="./resume.html" target="_blank" rel="noreferrer">Resume <span>↗</span></a>
+        <a href="mailto:24211a05q9@bvrit.ac.in">Email <span>↗</span></a>
+      </div>
       <span class="copyright mono">© <span id="year"></span> KS</span>
     </footer>
   </body>
