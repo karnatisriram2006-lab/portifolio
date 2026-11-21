@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#090909"/>
+  <path d="M0 126h1200M0 252h1200M0 378h1200M0 504h1200" stroke="#fff" stroke-opacity=".035"/>
+  <rect x="70" y="70" width="44" height="44" rx="3" fill="#b51226"/>
+  <text x="80" y="99" fill="#f0efed" font-family="monospace" font-size="15">KS</text>
+  <text x="70" y="260" fill="#f0efed" font-family="Arial,sans-serif" font-size="94" font-weight="700" letter-spacing="-7">KARNATI</text>
+  <text x="70" y="358" fill="#b51226" font-family="Arial,sans-serif" font-size="94" font-weight="700" letter-spacing="-7">SRIRAM.</text>
+  <text x="75" y="416" fill="#b9b5b3" font-family="monospace" font-size="16" letter-spacing="2">COMPUTER SCIENCE  /  SOFTWARE  /  AI</text>
+  <text x="75" y="560" fill="#92908f" font-family="monospace" font-size="14" letter-spacing="2">HYDERABAD, INDIA  ·  B.TECH CSE 2028</text>
+  <circle cx="1010" cy="300" r="130" fill="none" stroke="#b51226" stroke-opacity=".48"/>
+  <circle cx="1010" cy="300" r="92" fill="#111" stroke="#b51226" stroke-opacity=".38"/>
+  <text x="969" y="324" fill="#f0efed" font-family="Arial,sans-serif" font-size="62">KS</text>
+</svg>
