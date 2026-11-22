@@ -33,6 +33,27 @@ html {
   background: #080808;
 }
 
+/* ── Cinematic Vignette ── */
+/* html::before is the only clean pseudo-element slot at this level.
+   Fixed, behind everything (z-index: 0 on html means this sits beneath body). */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Radial vignette: transparent centre, soft dark edges/corners.
+     Two-stop approach: inner transparent zone is generous (60% radius)
+     so only the outer 40% picks up any darkening. */
+  background: radial-gradient(
+    ellipse 130% 110% at 50% 42%,
+    transparent 0%,
+    transparent 52%,
+    rgba(4, 3, 3, 0.18) 72%,
+    rgba(2, 2, 2, 0.42) 100%
+  );
+}
+
 body {
   margin: 0;
   background-color: #080808;
@@ -172,10 +193,19 @@ a:focus-visible, button:focus-visible {
   inset: 0;
   z-index: 20;
   pointer-events: none;
-  /* Denser 4-octave noise — more natural film-grain texture */
-  opacity: 0.048;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
+  /*
+   * Fine cinematic grain: 4-octave fractalNoise, finer frequency than before.
+   * mix-blend-mode: overlay means the grain interacts with the background
+   * tones physically — bright areas get lighter texture, dark areas get
+   * darker, which is how real film grain behaves. Opacity at 3% stays
+   * perceptible at close range but invisible at a glance.
+   */
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  /* Scale up slightly so the tile seams are off-screen */
+  background-position: center;
 }
 
 .reading-progress {
